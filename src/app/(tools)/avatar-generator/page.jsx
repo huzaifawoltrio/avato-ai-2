@@ -5,6 +5,10 @@ import { HomeHeader } from "~/components/Section/Common/Header";
 import Header from "~/components/Section/Common/Header/ToolsHeader";
 import Footer from "~/components/Section/Common/Header/ToolsFooter";
 
+// Disable caching for this page
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 function App() {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -61,7 +65,7 @@ function App() {
             width: 50px;
             height: 50px;
             border: 4px solid #f3f3f3;
-            border-top: 4px solid #ff6b35;
+            border-top: 4px solid #007bff;
             border-radius: 50%;
             animation: spin 1s linear infinite;
             margin: 0 auto 1rem;
