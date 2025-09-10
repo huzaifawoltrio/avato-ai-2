@@ -7,7 +7,6 @@ import Footer from "~/components/Section/Common/Header/ToolsFooter";
 
 // Disable caching for this page
 export const dynamic = "force-dynamic";
-export const revalidate = 0;
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
