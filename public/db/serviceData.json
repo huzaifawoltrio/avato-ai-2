@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Mission Control Dashboard",
+    "icon": "/images/v3/icon1.png",
+    "description": "One hub to oversee your CRM, analytics, and AI workflows all in a sleek control center.",
+    "link": "single-service"
+  },
+  {
+    "title": "AI Content Generator",
+    "icon": "/images/v3/icon2.png",
+    "description": "Create blogs, ads, social posts, and emails in seconds. Always on-brand, SEO-friendly, and plagiarism-free.",
+    "link": "single-service"
+  },
+  {
+    "title": "Smart Communication Hub",
+    "icon": "/images/v3/icon3.png",
+    "description": "Automate outreach with AI-driven email, SMS, and call campaigns while keeping a human-like touch.",
+    "link": "single-service"
+  },
+  {
+    "title": "Compliance Guardian",
+    "icon": "/images/v3/icon4.png",
+    "description": "Scan messages and content for ADA, TCPA, and FTC compliance. Get instant green-light/red-light approval.",
+    "link": "single-service"
+  },
+  {
+    "title": "AI-Powered Analytics",
+    "icon": "/images/v3/icon5.png",
+    "description": "Uncover trends, bottlenecks, and opportunities with AI insights that go beyond traditional dashboards.",
+    "link": "single-service"
+  },
+  {
+    "title": "Branding Copilot",
+    "icon": "/images/v3/icon6.png",
+    "description": "Keep your brand consistent with AI-assisted messaging, logos, palettes, and style guide exports.",
+    "link": "single-service"
+  },
+  {
+    "title": "AI Video & Avatar Studio",
+    "icon": "/images/v3/icon7.png",
+    "description": "Turn photos into talking avatars, auto-generate videos with captions and music, or launch AI podcasts.",
+    "link": "single-service"
+  },
+  {
+    "title": "Review & Reputation Genie",
+    "icon": "/images/v3/icon8.png",
+    "description": "Automate review requests, monitor feedback, and build your online reputation.",
+    "link": "single-service"
+  },
+  {
+    "title": "Local Lead Radar",
+    "icon": "/images/v3/icon9.png",
+    "description": "Discover new leads from public records and local events, feeding them directly into your CRM.",
+    "link": "single-service"
+  }
+]

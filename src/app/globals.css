@@ -1,0 +1,101 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #ff6b35;
+  --color-secondary: #ffb84d;
+  --color-accent: #ff8c42;
+  --color-heading: #000000;
+  --color-body: #0c0c0c;
+  --color-gray: #414141;
+  --color-light: #e6e6e6;
+  --color-light-bg: #fff8f3;
+  --color-dark-bg: #000000;
+}
+
+/* Force custom colors to override Tailwind defaults */
+@layer utilities {
+  .text-primary {
+    color: var(--color-primary) !important;
+  }
+  .text-secondary {
+    color: var(--color-secondary) !important;
+  }
+  .text-accent {
+    color: var(--color-accent) !important;
+  }
+  .text-heading {
+    color: var(--color-heading) !important;
+  }
+  .text-body {
+    color: var(--color-body) !important;
+  }
+  .text-gray {
+    color: var(--color-gray) !important;
+  }
+  .text-light {
+    color: var(--color-light) !important;
+  }
+  .text-dark-bg {
+    color: var(--color-dark-bg) !important;
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary) !important;
+  }
+  .bg-secondary {
+    background-color: var(--color-secondary) !important;
+  }
+  .bg-accent {
+    background-color: var(--color-accent) !important;
+  }
+  .bg-light-custom {
+    background-color: var(--color-light-bg) !important;
+  }
+  .bg-dark-bg {
+    background-color: var(--color-dark-bg) !important;
+  }
+
+  .border-primary {
+    border-color: var(--color-primary) !important;
+  }
+  .border-secondary {
+    border-color: var(--color-secondary) !important;
+  }
+}
+
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #ff6b35;
+  --color-secondary: #ffb84d;
+  --color-accent: #ff8c42;
+  --color-heading: #000000;
+  --color-body: #0c0c0c;
+  --color-gray: #414141;
+  --color-light: #e6e6e6;
+  --color-light-bg: #fff8f3;
+  --color-dark-bg: #000000;
+  --color-white: #ffffff;
+  --color-blue-bg: #f0f8ff; /* You might want to adjust this */
+}
+
+/* Add this at the end of your globals.css */
+@layer base {
+  @keyframes HaCtvBtn_Exploit_MoveScaleUpInitial {
+    to {
+      transform: translate3d(0, -100%, 0) scale(1.2);
+    }
+  }
+
+  @keyframes HaCtvBtn_Exploit_MoveScaleUpEnd {
+    to {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+  }
+}
