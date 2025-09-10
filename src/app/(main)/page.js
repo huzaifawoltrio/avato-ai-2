@@ -7,7 +7,7 @@ import ServiceSection from "~/components/Section/Home-3/Service/Service";
 import FAQSection from "~/components/Section/Common/FAQ/FAQSection";
 import Pricing from "~/components/Section/Common/Pricing";
 import HomeHeader from "~/components/Section/Common/Header/HomeHeader";
-import FooterSectionThree from "./../components/Section/Common/Footer-3/FooterThree";
+import FooterSectionThree from "../../components/Section/Common/Footer-3/FooterThree";
 
 export default function HomeThreePage() {
   return (

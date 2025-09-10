@@ -59,11 +59,11 @@ const UploadPhotoStep = ({ onNext, uploadedImage, setUploadedImage }) => {
         {!uploadedImage ? (
           <div
             className={`
-              border-2 border-dashed border-primary bg-light-bg rounded-lg p-8 text-center transition-all duration-300 cursor-pointer
-              hover:border-accent hover:bg-orange-50
+              border-2 border-dashed border-amber-400 bg-amber-50 rounded-lg p-8 text-center transition-all duration-300 cursor-pointer
+              hover:border-amber-600 hover:bg-amber-100
               ${
                 dragOver
-                  ? "border-accent bg-orange-100 transform scale-105"
+                  ? "border-amber-600 bg-amber-100 transform scale-105"
                   : ""
               }
             `}
@@ -73,7 +73,7 @@ const UploadPhotoStep = ({ onNext, uploadedImage, setUploadedImage }) => {
             onClick={() => fileInputRef.current?.click()}
           >
             <div className="flex flex-col items-center justify-center py-12">
-              <Upload className="text-primary mb-4" size={48} />
+              <Upload className="text-amber-600 mb-4" size={48} />
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 Drag & drop your photo here
               </h3>
@@ -98,22 +98,24 @@ const UploadPhotoStep = ({ onNext, uploadedImage, setUploadedImage }) => {
             animate={{ opacity: 1, scale: 1 }}
             className="relative"
           >
-            <div className="bg-light-bg rounded-lg p-4 border border-primary">
-              <div className="relative inline-block">
-                <img
-                  src={uploadedImage}
-                  alt="Uploaded"
-                  className="max-w-full max-h-64 rounded-lg mx-auto object-cover"
-                />
-                <button
-                  onClick={removeImage}
-                  className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition-colors"
-                >
-                  <X size={16} />
-                </button>
+            <div className="bg-amber-50 rounded-lg p-6 border border-amber-400">
+              <div className="flex justify-center items-center relative">
+                <div className="relative">
+                  <img
+                    src={uploadedImage}
+                    alt="Uploaded"
+                    className="max-w-full max-h-64 rounded-lg object-cover shadow-md"
+                  />
+                  <button
+                    onClick={removeImage}
+                    className="absolute -top-3 -right-3 bg-red-500 text-white rounded-full p-2 hover:bg-red-600 transition-colors shadow-lg"
+                  >
+                    <X size={16} />
+                  </button>
+                </div>
               </div>
               <div className="text-center mt-4">
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-amber-700 font-medium">
                   Photo uploaded successfully!
                 </p>
               </div>
@@ -125,13 +127,14 @@ const UploadPhotoStep = ({ onNext, uploadedImage, setUploadedImage }) => {
           <button
             onClick={onNext}
             disabled={!uploadedImage}
-            className={`
-              px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300 ease-in-out
-              bg-gradient-to-r from-primary to-accent shadow-lg
-              hover:shadow-xl hover:-translate-y-0.5
+            className="
+              px-8 py-3 rounded-lg font-semibold text-white transition-all duration-300 ease-in-out
+              bg-gradient-to-r from-amber-500 to-amber-600 shadow-lg
+              hover:from-amber-600 hover:to-amber-700 hover:shadow-xl hover:-translate-y-0.5
               active:translate-y-0 active:shadow-md
               disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-md
-            `}
+              disabled:from-gray-400 disabled:to-gray-400
+            "
           >
             Next Step
           </button>

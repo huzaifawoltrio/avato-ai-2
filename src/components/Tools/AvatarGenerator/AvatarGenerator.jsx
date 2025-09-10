@@ -90,7 +90,7 @@ const AvatarGenerator = () => {
   };
 
   return (
-    <div className="min-h-screen bg-light-bg py-8 px-4">
+    <div className="min-h-screen bg-light-bg py-8 px-4 mt-22 mb-0">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">

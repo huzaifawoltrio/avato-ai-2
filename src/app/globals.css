@@ -1,8 +1,4 @@
-/* app/globals.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import "tailwindcss";
 :root {
   --color-primary: #ff6b35;
   --color-secondary: #ffb84d;
@@ -64,25 +60,6 @@
   .border-secondary {
     border-color: var(--color-secondary) !important;
   }
-}
-
-/* app/globals.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --color-primary: #ff6b35;
-  --color-secondary: #ffb84d;
-  --color-accent: #ff8c42;
-  --color-heading: #000000;
-  --color-body: #0c0c0c;
-  --color-gray: #414141;
-  --color-light: #e6e6e6;
-  --color-light-bg: #fff8f3;
-  --color-dark-bg: #000000;
-  --color-white: #ffffff;
-  --color-blue-bg: #f0f8ff; /* You might want to adjust this */
 }
 
 /* Add this at the end of your globals.css */

@@ -1,23 +1,14 @@
-import "./globals.css"; // only Tailwind here
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
+import "../globals.css";
 
 export const metadata = {
-  title: "Tools Section",
-  description: "Custom tools powered by Tailwind",
+  title: "Your Tool Page Title",
+  description: "Description for your tool pages",
 };
 
 export default function ToolsLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} bg-gray-50 text-gray-900`}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

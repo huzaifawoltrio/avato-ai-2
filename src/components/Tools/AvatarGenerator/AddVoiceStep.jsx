@@ -76,21 +76,21 @@ const AddVoiceStep = ({
                 p-6 rounded-lg border-2 cursor-pointer transition-all duration-300
                 ${
                   selectedVoice === voice.id
-                    ? "border-primary bg-orange-50"
-                    : "border-gray-200 bg-white hover:border-accent"
+                    ? "border-amber-400 bg-amber-50"
+                    : "border-gray-200 bg-white hover:border-amber-400"
                 }
               `}
               onClick={() => setSelectedVoice(voice.id)}
             >
               <div className="flex items-start justify-between mb-4">
-                <div>
+                <div className="flex-1">
                   <h3 className="font-semibold text-lg text-gray-800">
                     {voice.name}
                   </h3>
                   <p className="text-gray-600 text-sm mb-1">
                     {voice.description}
                   </p>
-                  <span className="text-xs text-accent font-medium">
+                  <span className="text-xs text-amber-600 font-medium">
                     {voice.accent} Accent
                   </span>
                 </div>
@@ -99,12 +99,12 @@ const AddVoiceStep = ({
                     e.stopPropagation();
                     playVoiceSample(voice.id);
                   }}
-                  className="p-2 rounded-full bg-light-bg hover:bg-orange-100 transition-colors"
+                  className="p-3 rounded-full bg-amber-50 hover:bg-amber-100 transition-colors flex-shrink-0 ml-4"
                 >
                   {playingVoice === voice.id ? (
-                    <Pause className="text-primary" size={20} />
+                    <Pause className="text-amber-600" size={20} />
                   ) : (
-                    <Play className="text-primary" size={20} />
+                    <Play className="text-amber-600" size={20} />
                   )}
                 </button>
               </div>
@@ -116,9 +116,9 @@ const AddVoiceStep = ({
           ))}
         </div>
 
-        <div className="bg-light-bg rounded-lg p-6 mb-8">
+        <div className="bg-amber-50 rounded-lg p-6 mb-8 border border-amber-200">
           <div className="flex items-center mb-4">
-            <Mic className="text-primary mr-3" size={24} />
+            <Mic className="text-amber-600 mr-3" size={24} />
             <h3 className="font-semibold text-lg text-gray-800">
               Custom Voice Recording
             </h3>
@@ -127,28 +127,29 @@ const AddVoiceStep = ({
             Want to use your own voice? Record a sample to create a custom voice
             profile.
           </p>
-          <button className="px-6 py-3 rounded-lg font-semibold border-2 border-primary text-primary bg-transparent transition-all duration-300 hover:bg-primary hover:text-white hover:-translate-y-0.5">
+          <button className="px-6 py-3 rounded-lg font-semibold border-2 border-amber-400 text-amber-600 bg-transparent transition-all duration-300 hover:bg-amber-400 hover:text-white hover:-translate-y-0.5">
             Record Your Voice
           </button>
         </div>
 
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <button
             onClick={onPrevious}
-            className="px-6 py-3 rounded-lg font-semibold border-2 border-primary text-primary bg-transparent transition-all duration-300 hover:bg-primary hover:text-white hover:-translate-y-0.5"
+            className="px-6 py-3 rounded-lg font-semibold border-2 border-amber-400 text-amber-600 bg-transparent transition-all duration-300 hover:bg-amber-400 hover:text-white hover:-translate-y-0.5"
           >
             Previous
           </button>
           <button
             onClick={onNext}
             disabled={!selectedVoice}
-            className={`
-              px-6 py-3 rounded-lg font-semibold text-white transition-all duration-300 ease-in-out
-              bg-gradient-to-r from-primary to-accent shadow-lg
-              hover:shadow-xl hover:-translate-y-0.5
+            className="
+              px-8 py-3 rounded-lg font-semibold text-white transition-all duration-300 ease-in-out
+              bg-gradient-to-r from-amber-500 to-amber-600 shadow-lg
+              hover:from-amber-600 hover:to-amber-700 hover:shadow-xl hover:-translate-y-0.5
               active:translate-y-0 active:shadow-md
               disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none disabled:shadow-md
-            `}
+              disabled:from-gray-400 disabled:to-gray-400
+            "
           >
             Next Step
           </button>
