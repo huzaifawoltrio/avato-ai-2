@@ -200,17 +200,17 @@ const HomeHeader = ({ roundedBtn }) => {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Link href="#" className="nav-link-item">
+                  <Link href="/pricing" className="nav-link-item">
                     Pricing
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link href="#" className="nav-link-item">
+                {/* <li className="nav-item">
+                  <Link href="/integrations" className="nav-link-item">
                     Integrations
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
-                  <Link href="#" className="nav-link-item">
+                  <Link href="/contact-us" className="nav-link-item">
                     Contact
                   </Link>
                 </li>

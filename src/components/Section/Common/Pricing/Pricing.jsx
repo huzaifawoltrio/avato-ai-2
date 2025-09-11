@@ -31,11 +31,11 @@ const PricingSection = () => {
 
         {/* Pricing Grid */}
         <div
-          className="row zubuz-pricing-four-column"
+          className="row zubuz-pricing-four-column justify-content-center"
           id="table-price-value"
           data-pricing-dynamic
         >
-          {/* Free Plan */}
+          {/* Starter Plan */}
           <div className="col-xl-3 col-md-6">
             <div className="zubuz-pricing-wrap">
               <div className="zubuz-pricing-header">
@@ -44,7 +44,7 @@ const PricingSection = () => {
               <div className="zubuz-pricing-price">
                 <h2>$</h2>
                 <div className="zubuz-price dynamic-value">
-                  {isMonthly ? 0 : 19}
+                  {isMonthly ? 0 : 0}
                 </div>
                 <p>/{isMonthly ? "Monthly" : "Yearly"}</p>
               </div>
@@ -78,16 +78,16 @@ const PricingSection = () => {
             </div>
           </div>
 
-          {/* Basic Plan */}
+          {/* Growth Plan - Now Highlighted */}
           <div className="col-xl-3 col-md-6">
-            <div className="zubuz-pricing-wrap">
+            <div className="zubuz-pricing-wrap active">
               <div className="zubuz-pricing-header">
                 <h5>Growth</h5>
               </div>
               <div className="zubuz-pricing-price">
                 <h2>$</h2>
                 <div className="zubuz-price dynamic-value">
-                  {isMonthly ? 29 : 59}
+                  {isMonthly ? 29 : 29}
                 </div>
                 <p>/{isMonthly ? "Monthly" : "Yearly"}</p>
               </div>
@@ -116,22 +116,22 @@ const PricingSection = () => {
                   </li>
                 </ul>
               </div>
-              <Link className="zubuz-pricing-btn" href="contact-us">
+              <Link className="zubuz-pricing-btn active" href="contact-us">
                 Start Growth
               </Link>
             </div>
           </div>
 
-          {/* Standard Plan */}
+          {/* Pro Plan */}
           <div className="col-xl-3 col-md-6">
-            <div className="zubuz-pricing-wrap active">
+            <div className="zubuz-pricing-wrap">
               <div className="zubuz-pricing-header">
                 <h5>Pro</h5>
               </div>
               <div className="zubuz-pricing-price">
                 <h2>$</h2>
                 <div className="zubuz-price dynamic-value">
-                  {isMonthly ? 59 : 99}
+                  {isMonthly ? 59 : 59}
                 </div>
                 <p>/{isMonthly ? "Monthly" : "Yearly"}</p>
               </div>
@@ -159,53 +159,8 @@ const PricingSection = () => {
                   </li>
                 </ul>
               </div>
-              <Link className="zubuz-pricing-btn active" href="contact-us">
-                Go Pro
-              </Link>
-            </div>
-          </div>
-
-          {/* Enterprise Plan */}
-          <div className="col-xl-3 col-md-6">
-            <div className="zubuz-pricing-wrap">
-              <div className="zubuz-pricing-header">
-                <h5>Enterprise</h5>
-              </div>
-              <div className="zubuz-pricing-price">
-                <h2>$</h2>
-                <div className="zubuz-price dynamic-value">
-                  {isMonthly ? 149 : 249}
-                </div>
-                <p>/{isMonthly ? "Monthly" : "Yearly"}</p>
-              </div>
-              <div className="zubuz-pricing-description">
-                <p>Custom AI at scale for large organizations.</p>
-              </div>
-              <div className="zubuz-pricing-body">
-                <ul>
-                  <li>
-                    <img src="/images/v3/check.png" alt="" /> Unlimited AI
-                    credits
-                  </li>
-                  <li>
-                    <img src="/images/v3/check.png" alt="" /> Dedicated account
-                    manager
-                  </li>
-                  <li>
-                    <img src="/images/v3/check.png" alt="" /> On-premise or
-                    cloud options
-                  </li>
-                  <li>
-                    <img src="/images/v3/check.png" alt="" /> Enterprise-level
-                    security
-                  </li>
-                  <li>
-                    <img src="/images/v3/check.png" alt="" /> 50+ integrations
-                  </li>
-                </ul>
-              </div>
               <Link className="zubuz-pricing-btn" href="contact-us">
-                Contact Sales
+                Go Pro
               </Link>
             </div>
           </div>

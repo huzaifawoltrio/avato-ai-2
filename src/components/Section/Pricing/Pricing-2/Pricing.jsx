@@ -10,13 +10,13 @@ const PricingSectionTwo = () => {
           <div className="zubuz-section-title zubuz-two-column-title">
             <div className="row">
               <div className="col-lg-7">
-                <h2>Wide range of SaaS solutions</h2>
+                <h2>Complete AI feature comparison</h2>
               </div>
               <div className="col-lg-5 d-flex align-items-center">
                 <p>
-                  Discovered our all customized services and you can double,
-                  triple, or quadruple your income & beat your competition with
-                  professional services!
+                  Compare all AvatoAI features across our plans. Choose the
+                  perfect solution to accelerate your AI journey and unlock
+                  unprecedented productivity gains for your team.
                 </p>
               </div>
             </div>
@@ -28,92 +28,200 @@ const PricingSectionTwo = () => {
                 <tr>
                   <th>Feature Name:</th>
                   <th>Starter</th>
-                  <th>Business</th>
-                  <th>Enterprise</th>
+                  <th>Growth</th>
+                  <th>Pro</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Users</td>
-                  <td>Up to 15 users</td>
+                  <td>AI Credits per month</td>
+                  <td>500 credits</td>
+                  <td>10K credits</td>
+                  <td>50K credits</td>
+                </tr>
+                <tr>
+                  <td>Team members</td>
+                  <td>1 user</td>
+                  <td>Up to 5 users</td>
                   <td>Up to 20 users</td>
-                  <td>Up to 100 users</td>
                 </tr>
                 <tr>
-                  <td>File storage</td>
-                  <td>2 GB</td>
-                  <td>5 GB</td>
-                  <td>10 GB</td>
-                </tr>
-                <tr>
-                  <td>Premium supports</td>
+                  <td>Core AI features</td>
                   <td>
-                    <img src="/images/icon/check.svg" alt="" />
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/v3/check.png" alt="" />
+                    </div>
                   </td>
                   <td>
-                    <img src="/images/icon/check.svg" alt="" />
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/v3/check.png" alt="" />
+                    </div>
                   </td>
                   <td>
-                    <img src="/images/icon/check.svg" alt="" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Secure transfer</td>
-                  <td>
-                    <img src="/images/icon/minus.svg" alt="" />
-                  </td>
-                  <td>
-                    <img src="/images/icon/minus.svg" alt="" />
-                  </td>
-                  <td>
-                    <img src="/images/icon/check.svg" alt="" />
-                  </td>
-                </tr>
-                <tr>
-                  <td>Statistics and tracking</td>
-                  <td>
-                    <img src="/images/icon/minus.svg" alt="" />
-                  </td>
-                  <td>
-                    <img src="/images/icon/check.svg" alt="" />
-                  </td>
-                  <td>
-                    <img src="/images/icon/check.svg" alt="" />
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/v3/check.png" alt="" />
+                    </div>
                   </td>
                 </tr>
                 <tr>
-                  <td>File size limit</td>
-                  <td>100 MB</td>
-                  <td>1 GB</td>
-                  <td>1 GB</td>
+                  <td>Advanced AI models</td>
+                  <td>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/icon/minus.svg" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/v3/check.png" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/v3/check.png" alt="" />
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Mobile app</td>
+                  <td>Custom dashboards</td>
                   <td>
-                    <img src="/images/icon/check.svg" alt="" />
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/icon/minus.svg" alt="" />
+                    </div>
                   </td>
                   <td>
-                    <img src="/images/icon/check.svg" alt="" />
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/icon/minus.svg" alt="" />
+                    </div>
                   </td>
                   <td>
-                    <img src="/images/icon/check.svg" alt="" />
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/v3/check.png" alt="" />
+                    </div>
                   </td>
+                </tr>
+                <tr>
+                  <td>API integrations</td>
+                  <td>5 integrations</td>
+                  <td>15 integrations</td>
+                  <td>30 integrations</td>
+                </tr>
+                <tr>
+                  <td>Priority support</td>
+                  <td>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/icon/minus.svg" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/v3/check.png" alt="" />
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      <img src="/images/v3/check.png" alt="" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Analytics & insights</td>
+                  <td>Basic</td>
+                  <td>Advanced</td>
+                  <td>Enterprise-level</td>
+                </tr>
+                <tr>
+                  <td>Project limits</td>
+                  <td>3 projects</td>
+                  <td>Unlimited</td>
+                  <td>Unlimited</td>
                 </tr>
                 <tr>
                   <td></td>
                   <td>
                     <Link className="zubuz-default-btn" href="contact-us">
-                      <span>Get Started Now</span>
+                      <span>Get Started Free</span>
                     </Link>
                   </td>
                   <td>
                     <Link className="zubuz-default-btn" href="contact-us">
-                      <span>Get Started Now</span>
+                      <span>Start Growth</span>
                     </Link>
                   </td>
                   <td>
                     <Link className="zubuz-default-btn" href="contact-us">
-                      <span>Get Started Now</span>
+                      <span>Go Pro</span>
                     </Link>
                   </td>
                 </tr>

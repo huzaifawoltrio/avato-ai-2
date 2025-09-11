@@ -1,16 +1,15 @@
-import Footer from "~/components/Section/Common/Footer";
 import PageHeader from "~/components/Section/Common/PageHeader";
 import IntegrationSection from "~/components/Section/Integrations/Integration/Integration";
-import Header from "~/components/Section/Common/Header/Header";
-
+import { HomeHeader } from "~/components/Section/Common/Header";
+import FooterSectionThree from "~/components/Section/Common/Footer-3/FooterThree";
 
 export default function IntegrationPage() {
   return (
     <>
-      <Header />
+      <HomeHeader roundedBtn="true" />
       <PageHeader title="Integrations" />
       <IntegrationSection />
-      <Footer />
+      <FooterSectionThree />
     </>
   );
 }
