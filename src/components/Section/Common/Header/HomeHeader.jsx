@@ -225,7 +225,7 @@ const HomeHeader = ({ roundedBtn }) => {
                   ? "zubuz-default-btn zubuz-header-btn pill"
                   : "zubuz-default-btn zubuz-header-btn"
               }`}
-              href="#"
+              href="https://avato-dashboard.vercel.app/login"
             >
               <span>Get Started</span>
             </Link>
