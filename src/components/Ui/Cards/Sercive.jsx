@@ -10,8 +10,8 @@ const SerciveCard = ({ title, description, icon, link }) => {
         <div className="zubuz-iconbox-data data-small">
           <span>{title}</span>
           <p>{description}</p>
-          <Link className="zubuz-iconbox-btn" href="/avatar-generator">
-            <span>Start</span>
+          <Link className="zubuz-iconbox-btn" href="#">
+            <span>Details</span>
             <img src="/images/icon/arrow-right2.svg" alt="" />
           </Link>
         </div>

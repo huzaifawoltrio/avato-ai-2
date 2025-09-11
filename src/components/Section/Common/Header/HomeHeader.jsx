@@ -124,21 +124,23 @@ const HomeHeader = ({ roundedBtn }) => {
     >
       <div className="container">
         <nav className="navbar site-navbar">
-          <div
-            className="brand-logo"
-            style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
-          >
-            <Brain size={32} color="#ff6b35" />
-            <span
-              style={{
-                fontSize: "1.5rem",
-                fontWeight: "bold",
-                color: "#1f2937",
-              }}
+          <Link href={`/`}>
+            <div
+              className="brand-logo"
+              style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}
             >
-              AvatoAi
-            </span>
-          </div>
+              <Brain size={32} color="#ff6b35" />
+              <span
+                style={{
+                  fontSize: "1.5rem",
+                  fontWeight: "bold",
+                  color: "#1f2937",
+                }}
+              >
+                AvatoAi
+              </span>
+            </div>
+          </Link>
           <div className="menu-block-wrapper">
             <div className="menu-overlay" onClick={overlayClickHandler}></div>
             <nav
@@ -159,8 +161,8 @@ const HomeHeader = ({ roundedBtn }) => {
               </div>
               <ul className="site-menu-main" onClick={menuMainClickHandler}>
                 <li className="nav-item">
-                  <Link href="/dashboard" className="nav-link-item">
-                    Mission Control
+                  <Link href="/Services" className="nav-link-item">
+                    Our Services
                   </Link>
                 </li>
                 <li className="nav-item nav-item-has-children">
@@ -217,18 +219,13 @@ const HomeHeader = ({ roundedBtn }) => {
           </div>
 
           <div className="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
-            <div className="zubuz-header-btn-wrap">
-              <Link className="zubuz-login-btn" href="sign-in">
-                Login
-              </Link>
-            </div>
             <Link
               className={` ${
                 roundedBtn
                   ? "zubuz-default-btn zubuz-header-btn pill"
                   : "zubuz-default-btn zubuz-header-btn"
               }`}
-              href="contact-us"
+              href="#"
             >
               <span>Get Started</span>
             </Link>

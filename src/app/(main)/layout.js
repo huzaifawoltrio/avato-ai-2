@@ -1,11 +1,9 @@
 import { Inter, Raleway } from "next/font/google";
-import MainStyles from "~/components/MainStyles"; // Adjust the import path if necessary
 
-// Remove the old CSS imports
-// import "~/assets/css/bootstrap.min.css";
-// import "~/assets/css/app.css";
-// import "~/assets/css/main.css";
-// import "~/assets/css/react-adjustment.css";
+import "~/assets/css/bootstrap.min.css";
+import "~/assets/css/app.css";
+import "~/assets/css/main.css";
+import "~/assets/css/react-adjustment.css";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -33,7 +31,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${raleway.variable}`}>
-        <MainStyles />
         {children}
       </body>
     </html>
